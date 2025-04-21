@@ -1,17 +1,12 @@
-from app.calculator import Calculator
+class Calculator:
+   def multiply(self, x, y):
+       return x * y
 
-class TestCalculator:
-    def setup_method(self):
-        self.calc = Calculator
+   def division(self, x, y):
+       return x / y
 
-    def test_multiply(self):
-        assert self.calc.multiply(self,2,2) == 4
+   def subtraction(self, x, y):
+       return x - y
 
-    def test_division(self):
-        assert self.calc.division(self,4,2) == 2
-
-    def test_subtraction(self):
-        assert self.calc.subtraction(self,5,3) == 2
-
-    def test_adding(self):
-        assert self.calc.adding(self,1,1) == 2
+   def adding(self, x, y):
+       return x + y
